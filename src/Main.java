@@ -56,21 +56,40 @@ class ArithmeticCalculator{
         System.out.println("Delta of Quadratic Equation "+result);
 
     }
+//    9#task
+    public void perimeterRectangle(double w, double l){
+        result=2 *(w+l);
+        System.out.println("Perimeter of Rectangle is "+result);
+    }
+    public void areaRectangle(double w, double l){
+        result=(w*l);
+        System.out.println("Area of Rectangle is "+result);
+    }
+
+//    10# task
+    public void perimeterTriangle(double a, double b,double c){
+    result=a+b+c;
+    System.out.println("Perimeter of Triangle is "+result);
+    }
+    public void areaTriangle(double b, double h){
+        result=(b*h)/2;
+        System.out.println("Area of Triangle is "+result);
+    }
+
 }
 
 public class Main {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        System.out.println("Give me 1st number");
-        double num1=sc.nextInt();
-        System.out.println("Give me 2nd number");
-        double num2= sc.nextInt();
-        System.out.println("Give me 3rd number");
-        double num3= sc.nextInt();
+//        System.out.println("Give me 1st number");
+//        double num1=sc.nextInt();
+//        System.out.println("Give me 2nd number");
+//        double num2= sc.nextInt();
+//        System.out.println("Give me 3rd number");
+//        double num3= sc.nextInt();
 
 
-
-        ArithmeticCalculator calculator=new ArithmeticCalculator(num1,num2);
+//        ArithmeticCalculator calculator=new ArithmeticCalculator(num1,num2);
 //        calculator.addition();
 //        calculator.substraction();
 //        calculator.multiplication();
@@ -89,12 +108,62 @@ public class Main {
 ////        ArithmeticCalculator.perimeterCircle(r);
 //        ArithmeticCalculator.areaCircle(r);
 
-        calculator.deltaQuadQuation(num3);
+//        calculator.deltaQuadQuation(num3);
+
+//        9# task
+//        calculator.areaRectangle(num1,num2);
+//        calculator.perimeterRectangle(num1,num2);
 
 
+//        10# task
+//        System.out.println("Ente height of b side");
+//        int h= sc.nextInt();
+//        calculator.areaTriangle(h,num2);
+//        calculator.perimeterTriangle(num1,num2,num3);
 
 
+//        16# task -legal age checker 18+
+//        System.out.println("Enter your age");
+//        int age=sc.nextInt();
+//        boolean legalAge=age>=18;
+//        if (legalAge){
+//            System.out.println("You are in legal  age");
+//        }else System.out.println("You are not in legal  age");
 
+
+//        17# task Bigger number checker for 2numbers
+//        System.out.println("Enter 1st number");
+//        double num1= sc.nextDouble();
+//        System.out.println("Enter 2nd number");
+//        double num2= sc.nextDouble();
+//        if(num1>num2){
+//            System.out.println("1st number is bigger");
+//        }
+//        else if (num1<num2){
+//            System.out.println("2nd number is bigger");
+//        }
+//        else System.out.println("Both numbers are equal");
+
+
+//        18# task Bigger number checker for 3NUMBERS
+
+        System.out.println("Enter 1st number");
+        double num1= sc.nextDouble();
+        System.out.println("Enter 2nd number");
+        double num2= sc.nextDouble();
+        System.out.println("Enter 3rd number");
+        double num3= sc.nextDouble();
+        double largestNumber;
+        if(num1>=num2 && num1>=num3){
+            largestNumber=num1;
+            System.out.println("1st number is bigger : "+num1);
+        }
+        else if (num2>=num1 && num2>=num3 ){
+            largestNumber=num2;
+            System.out.println("2nd number is bigger : "+num2);
+        }
+        else {largestNumber = num3;
+            System.out.println("3rd number is bigger : " + num3);}
 
 
         sc.close();
