@@ -334,6 +334,157 @@ public class Main {
 //        } else System.out.println("You failed");
 
 
+//        31# asks for the name of a day of the week and displays whether it is a weekday (Monday to Friday) or a weekend day (Saturday and Sunday).
+//        System.out.println("Enter the name of day ... Example : Monday or Tuesday ...");
+//        String day=sc.nextLine().toLowerCase();
+//
+//        switch (day){
+//            case "monday":
+//                System.out.println("It is weekday");
+//                break;
+//            case "tuesday":
+//                System.out.println("It is weekday");
+//                break;
+//            case "wednesday":
+//                System.out.println("It is weekday");
+//                break;
+//            case "thursday":
+//                System.out.println("It is weekday");
+//                break;
+//            case "friday":
+//                System.out.println("It is weekday");
+//                break;
+//            case "saturday":
+//                System.out.println("It is weekend day");
+//                break;
+//            case "sunday":
+//                System.out.println("It is weekend day");
+//                break;
+//            default:
+//                System.out.println("Check your input !!!");
+//        }
+
+//        32#  asks for a person's height and weight and  calculates their body mass index (BMI), displaying the corresponding
+//        category (underweight, normal weight, overweight, obese, severely obese).
+//        System.out.println("Enter your height ...");
+//        double height=sc.nextDouble();
+//        System.out.println("Enter your weight ...");
+//        double weight=sc.nextDouble();
+//        double bmi = weight / (height* height);
+//        System.out.println("Your BMI is: " + bmi);
+//
+//        if (bmi < 16) {
+//            System.out.println("Category: Severely under "+ weight);
+//        } else if (bmi >= 16 && bmi < 17) {
+//            System.out.println("Category: Underweight");
+//        } else if (bmi >= 17 && bmi < 18.5) {
+//            System.out.println("Category: Mildly under-weight");
+//        } else if (bmi >= 18.5 && bmi < 25) {
+//            System.out.println("Category: Normal weight");
+//        } else if (bmi >= 25 && bmi <30) {
+//            System.out.println("Category: Overweight");
+//        } else if (bmi >= 30 && bmi < 35) {
+//            System.out.println("Category: Obese Class I (Mod-erately obese)");
+//        } else if (bmi >= 35 && bmi < 40) {
+//            System.out.println("Category: Obese Class II (Se-verely obese");
+//        }else {
+//            System.out.println("Category: Obese Class III (Very severely obese)");
+//        }
+
+
+//        33# asks for an integer and checks if it is divisible by 3 and 5 at the same time.
+//        System.out.println("Enter the number ...");
+//        int num=sc.nextInt();
+//        if(num%3==0 && num%5==0){
+//            System.out.println("It is divisible by 3 and 5");
+//        }else System.out.println("It is not divisible !");
+
+
+
+//        34# person's age and displays whether they are a child (0-12 years old), teenager
+//        (13-17 years old), adult (18-59 years old), or elderly (60 years old or older).
+//        System.out.println("Enter the age ...");
+//        int age=sc.nextInt();
+//        if(age>=0 && age<=12){
+//            System.out.println("You are a child");
+//        } else if (age>=13 && age<=17) {
+//            System.out.println("You are a teenager");
+//        } else if (age>=18 && age<=59) {
+//            System.out.println("You are a adult");
+//        } else if (age>=60) {
+//            System.out.println("You are elderly");
+//        }
+//        else System.out.println("Check your input !!!");
+
+
+//        35# two numbers and displays if the first is divisible by the second
+//        System.out.println("Enter the first ");
+//        int num1=sc.nextInt();
+//        System.out.println("Enter the second ");
+//        int num2=sc.nextInt();
+//        int result1 =num1%num2;
+//        int result2=num2%num1;
+//        if (result1==0){
+//            System.out.println("1st one is divisible by second one");
+//        }else if (result2==0){
+//            System.out.println("2nd one is divisible by 1st one");
+//        }
+//        else System.out.println("they are not divisble");
+
+
+
+//        36# displays the numbers 1 through 10 using a loop.
+//        for(int i=1;i<=10;i++){
+//            System.out.print(i+" ");
+//        }
+
+
+
+//        37. displays all numbers from 1 to 100
+//        for(int i=1;i<=100;i++){
+//            System.out.print(i+" ");
+//        }
+
+
+
+//        38. displays all even numbers from 1 to 100
+//        int num=2;
+//        while (num<100){
+//                System.out.print(num+" ");
+//            num+=2;
+//        }
+
+
+
+//        39. Write a program that displays even numbers 1 to 50 and odd numbers 51 to 100 using a repeating loop.
+//        System.out.print("Even numbers between 1 and 50 : ");
+//        for (int i=1;i<=50;i++){
+//            if( i%2==0){
+//                System.out.print(i+" ");
+//            }
+//        }
+//        System.out.println();
+//        System.out.print("Odd numbers between 51 and 100 : ");
+//        for (int i=51;i<100;i++){
+//            if( i%2!=0){
+//                System.out.print(i+" ");
+//            }
+//        }
+
+
+//        40# Create a program that prompts the user for a number and displays the table of that number using a loop.
+//        System.out.println("Enter the number ...");
+//        int num=sc.nextInt();
+//        int i=0;
+//        int result=0;
+//        while (i<=10){
+//            result=num*i;
+//            System.out.println(num+" x "+i+" = "+result);
+//            i++;
+//        }
+
+
+
 
 
 
