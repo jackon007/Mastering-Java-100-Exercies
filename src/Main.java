@@ -485,12 +485,88 @@ public class Main {
 
 
 
+//        41. Create a program that displays the table of all numbers from 1 to 10.
+//        for(int i=1;i<=10;i++){
+//            for (int j=1;j<=10;j++){
+//                System.out.println(i+" x "+j+" = "+i*j);
+//            }
+//            System.out.println();
+//        }
 
 
 
+//        42. Write a program that asks the user for a number N and displays the sum of all numbers from 1 to N.
+//        System.out.println("Enter the number ... ");
+//        int num=sc.nextInt();
+//
+//        int i=1;
+//        int sum=0;
+//        while (i<=num){
+//            sum+=i;
+//            i++;
+//        }
+//        System.out.println("The sum of numbers from 1 to N : "+sum);
+
+
+//        43. Write a program that calculates and displays the sum of even numbers from 1 to 100 using a repeating loop.
+//        int sum=0;
+//        int i=0;
+//        while (i<=100){
+//            sum+=i;
+//            i+=2;
+//        }
+//        System.out.println("The sum of even numbers from 1 to 100 : "+sum);
 
 
 
+//        44. Write a program that calculates and displays the value of the power of a number
+//        entered by the user raised to an exponent also entered by the user, using repetition loops.
+//        System.out.println("Enter the base number ...");
+//        int base= sc.nextInt();
+//        System.out.println("Enter the exponent number ...");
+//        int exponent=sc.nextInt();
+//        int result=1;
+//        for (int i=1;i<=exponent;i++){
+//            result*=base;
+//        }
+//        System.out.println("Result : "+result);
+
+
+//        45. Write a program that asks the user for a number N and says whether it is prime or not.
+//        System.out.println("Enter the number ...");
+//        int num=sc.nextInt();
+//        int count=0;
+//        for (int i=1;i<=num;i++){
+//            if (num==1){
+//                System.out.println(num +" is not reachable");
+//                break;
+//            }
+//            else if (num%i==0){
+//                count++;
+//            }
+//        }
+//        if (count>2){
+//            System.out.println("Number is not prime !!!");
+//        }else System.out.println("THe number is prime !!!");
+
+//        46. Write a program that prompts  the user for a number N and displays  all prime numbers less than N.
+        System.out.println("Enter the number ...");
+        int num=sc.nextInt();
+        if(num==2){
+            System.out.println(num);
+        }
+        for( int i=2;i<num;i++){
+            boolean isPrime=true;
+            for (int j=2;j<=Math.sqrt(i);j++){
+                if(i%j==0){
+                    isPrime=false;
+                    break;
+                }
+            }
+            if (isPrime){
+                System.out.println(i+" ");
+            }
+        }
 
         sc.close();
 
