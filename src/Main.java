@@ -550,23 +550,133 @@ public class Main {
 //        }else System.out.println("THe number is prime !!!");
 
 //        46. Write a program that prompts  the user for a number N and displays  all prime numbers less than N.
-        System.out.println("Enter the number ...");
-        int num=sc.nextInt();
-        if(num==2){
-            System.out.println(num);
-        }
-        for( int i=2;i<num;i++){
-            boolean isPrime=true;
-            for (int j=2;j<=Math.sqrt(i);j++){
-                if(i%j==0){
-                    isPrime=false;
-                    break;
-                }
-            }
-            if (isPrime){
-                System.out.println(i+" ");
-            }
-        }
+//        System.out.println("Enter the number ...");
+//        int num=sc.nextInt();
+//        if(num==2){
+//            System.out.println(num);
+//        }
+//        for( int i=2;i<num;i++){
+//            boolean isPrime=true;
+//            for (int j=2;j<=Math.sqrt(i);j++){
+//                if(i%j==0){
+//                    isPrime=false;
+//                    break;
+//                }
+//            }
+//            if (isPrime){
+//                System.out.println(i+" ");
+//            }
+//        }
+
+
+//        47. Create a program that displays the first N prime numbers, where Nis informed by the user, using a loop.
+//        System.out.println("Enter the number ...");
+//        int num=sc.nextInt();
+//        int count=0;
+//        int i=2;
+//        while (count!=num){
+//            boolean isPrime=true;
+//
+//            for(int j=2;j<=Math.sqrt(i);j++){
+//                if(i%j==0){
+//                    isPrime=false;
+//                }
+//            }
+//            if (isPrime){
+//                count++;
+//                System.out.println(i);
+//            }
+//            i++;
+//        }
+
+
+//        48# Create a program that displays the first N first perfect squares, where Nis informed by the user, using a loop.
+//        System.out.println("Enter the number ...");
+//        int num=sc.nextInt();
+//        for(int i=1;i<=num;i++){
+//            int result=1;
+//            result=i*i;
+//            System.out.println(result);
+//        }
+
+//        49. Write a program that prompts the user for two numbers A and B and displays all numbers between A and B.
+//        System.out.println("Enter A number ...");
+//        int a=sc.nextInt();
+//        System.out.println("Enter B number ...");
+//        int b=sc.nextInt();
+//        if (a>b){
+//            while (a>=b){
+//                System.out.println(b);
+//                b++;
+//            }
+//        }
+//        else  while (a<=b){
+//            System.out.println(a);
+//            a++;
+//        }
+//        2nd version
+        //        if (a <= b) {
+//            for (int i = a; i <= b; i++) {
+//                System.out.print(i +" ");
+//            }
+//        } else {
+//            for (int i = a; i >= b; i--) {
+//                System.out.print(i + "");
+//            }
+//        }
+
+
+//        50. Write a program that reads numbers from the user until a negative number is entered, and prints the sum of the positive numbers.
+//        int sum=0;
+//        int nums=0;
+//        while (nums>=0){
+//            sum+=nums;
+//            System.out.println("Enter a number ...");
+//            nums=sc.nextInt();
+//        }
+//        System.out.println(sum);
+
+
+//        51. Write a program that prompts the user for a number and displays the Fibonacci sequence up to the given number using a repeating loop.
+//        System.out.println("Enter the number ...");
+//        int n=sc.nextInt();
+//        int nextNum=0;
+//        int num1=0;
+//        int num2=1;
+//        while (num1<=n){
+//            System.out.println(num1);
+//            nextNum=num1+num2;
+//            num1=num2;
+//            num2=nextNum;
+//        }
+
+
+
+//        52. Write a program that reads numbers from the user until zero is entered, and displays the average of the numbers entered.
+//        int sum=0;
+//        int count=0;
+//        while (true){
+//            System.out.println("Enter a number ...");
+//            int number=sc.nextInt();
+//            if (number==0){
+//                break;
+//            }
+//            sum+=number;
+//            count++;
+//        }
+//        double avg=sum/count;
+//        System.out.println(avg);
+
+
+
+
+
+
+
+
+
+
+
 
         sc.close();
 
