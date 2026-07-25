@@ -668,6 +668,109 @@ public class Main {
 //        System.out.println(avg);
 
 
+//        53.  prompts the user for a list of numbers, until the user types the number zero, and displays the largest and smallest numbers in the list.
+//            int largest=Integer.MIN_VALUE;
+//            int smallest=Integer.MAX_VALUE;
+//           while (true){
+//               System.out.println("Enter a number...");
+//               int number= sc.nextInt();
+//               if (number==0){
+//                   break;
+//               }
+//               if (number>largest){
+//                   largest=number;
+//               }
+//               if (number<smallest){
+//                   smallest=number;
+//               }
+//           }
+//        System.out.println("Largest number is :" +largest);
+//        System.out.println("The smallest number is : "+smallest);
+
+//        54. Write a program that prompts the user for a sentence and displays the number of vowels in the sentence.
+//        System.out.println("Enter a sentence ...");
+//        String sentence=sc.nextLine().toLowerCase();
+//        int count=0;
+//        for (int i=0;i<sentence.length();i++){
+//            char ch=sentence.charAt(i);
+//            if (ch =='a'||ch =='e'||ch =='i'||ch=='o'||ch =='u')
+//                count++;
+//        }
+//        System.out.println("The count of vowels : "+count);
+
+
+//        55. Write a program that prompts the user for a number and displays its divisors.
+//        System.out.println("Enter the number ...");
+//        int number= sc.nextInt();
+//        System.out.println("its divisors: ");
+//        for (int i=1;i<=number;i++){
+//            if (number%i==0){
+//                System.out.println(i);
+//            }
+//        }
+
+
+//        56. Write a program that determines the lowest common multiple (LCM) between two numbers entered by the user.
+//        System.out.println("Enter the 1st number ...");
+//        int a= sc.nextInt();
+//        System.out.println("Enter the 2nd number ...");
+//        int b= sc.nextInt();
+//        System.out.println("LCM for "+a +" , "+b+" : ");
+//        int i=0;
+//        if(b%a==0){
+//            System.out.println(b);
+//        }else if (a%b==0){
+//            System.out.println(a);
+//        }else
+//            if (a>b){
+//            while (true) {
+//                i++;
+//                int result=a*i;
+//                if (result%b==0){
+//                    System.out.println(result);
+//                    break;
+//                }
+//
+//            }
+//            }else if (a<b) {
+//                while (true) {
+//                    i++;
+//                    int result = b * i;
+//                    if (result % a == 0) {
+//                        System.out.println(result);
+//                        break;
+//                    }
+//                }
+//            }
+
+
+//       57# Write a program that determines the greatest common divisor (GCD) between two numbers entered by the user.
+//        System.out.println("Enter the 1st number ...");
+//        int a= sc.nextInt();
+//        System.out.println("Enter the 2nd number");
+//        int b= sc.nextInt();
+//
+//        while (b!=0){
+//            int temp=b;
+//            b=a%b;
+//            a=temp;
+//        }
+//        System.out.println("GCD :"+a);
+
+
+//        61#  Create a program that reads an array of integers and displays the sum of all the elements.
+//        System.out.println("Enter the size of array");
+//        int size=sc.nextInt();
+//        int arr[]=new int[size];
+//        for (int i=0;i<size;i++){
+//            System.out.println("Enter the element of array ...");
+//            arr[i]= sc.nextInt();
+//        }
+//        int sum=0;
+//        for(int n:arr){
+//            sum+=n;
+//        }
+//        System.out.println("The sume of elements of array is : " +sum);
 
 
 
@@ -677,8 +780,7 @@ public class Main {
 
 
 
-
-        sc.close();
+                sc.close();
 
     }
 }
