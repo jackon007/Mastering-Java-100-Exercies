@@ -772,12 +772,94 @@ public class Main {
 //        }
 //        System.out.println("The sume of elements of array is : " +sum);
 
+//        62. Write a program that reads an array of integers and displays the largest element in the array.
+//        System.out.println("Enter the size of array");
+//        int size= sc.nextInt();
+//        int arr[]=new int[size];
+//
+//        for(int i=0;i<size;i++){
+//            System.out.println("Enter the number of Array ...");
+//            arr[i]=sc.nextInt();
+//        }
+//        int largest=0;
+//        for(int i=0;i<size-1;i++){
+//            if (arr[i]>arr[i+1]){
+//                largest=arr[i];
+//                arr[i]=arr[i+1];
+//                arr[i+1]=largest;
+//            }
+//        }
+//        System.out.println(largest);
 
+//        63# Write a program that reads an array of integers and displays the average of the elements.
+//        System.out.println("Enter the size of array");
+//        int size= sc.nextInt();
+//        int arr[]=new int[size];
+//        for(int i=0;i<size;i++){
+//            System.out.println("Enter the number of Array ...");
+//            arr[i]=sc.nextInt();
+//        }
+//        int sum=0;
+//        for (int i=0;i<size;i++){
+//            sum+=arr[i];
+//        }
+//        double avg=sum/size;
+//        System.out.println("Average of elements of array is :" +avg);
 
+//        64. Create a program that reads two vectors of integers of the same size and
+//        displays a new vector with the sum of the corresponding elements of the two vectors.
+//        System.out.println("Enter the size of arrays");
+//        int size= sc.nextInt();
+//        int arr1[]=new int[size];
+//        for(int i=0;i<size;i++){
+//            System.out.println("Enter the number of 1st Array ...");
+//            arr1[i]=sc.nextInt();
+//        }
+//
+//        int arr2[]=new int[size];
+//        for(int i=0;i<size;i++){
+//            System.out.println("Enter the number of 2nd Array ...");
+//            arr2[i]=sc.nextInt();
+//        }
+//        System.out.println("The elements of sum of the corresponding elements of the two vectors ");
+//        int arr3[] =new int[size];
+//        for (int i=0;i<size;i++){
+//            arr3[i]=arr1[i]+arr2[i];
+//            System.out.println(arr3[i]);
+//        }
 
+//        #65. Write a program that reads an array of integers and checks if they are in ascending order.
+//        System.out.println("Enter the size of array");
+//        int size= sc.nextInt();
+//        int arr[]=new int[size];
+//        for(int i=0;i<size;i++){
+//            System.out.println("Enter the number of Array ...");
+//            arr[i]=sc.nextInt();
+//        }
+//        boolean ascendingOrder=true;
+//        for(int i=0;i<size-1;i++){
+//            if (arr[i]>arr[i+1]){
+//                ascendingOrder=false;
+//                break;
+//            }
+//        }
+//        if (ascendingOrder){
+//            System.out.println("Array of integers are in ascending order");
+//        }else System.out.println("They are not");
 
-
-
+//        66. Write a program that reads an array of integers and displays the elements in reverse order.
+//        System.out.println("Enter the size of array");
+//        int size= sc.nextInt();
+//        int arr[]=new int[size];
+//        for(int i=0;i<size;i++){
+//            System.out.println("Enter the number of Array ...");
+//            arr[i]=sc.nextInt();
+//        }
+//
+//        System.out.println("Reverse of arrray is :");
+//        for(int i=size-1;i>=0;i--){
+//            System.out.println(arr[i]+" ");
+//        }
 
 
                 sc.close();
