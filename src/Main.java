@@ -861,7 +861,101 @@ public class Main {
 //            System.out.println(arr[i]+" ");
 //        }
 
+//        68. Write a program that reads an array of integers and displays how many times a specific number appears in the array.
+//        System.out.println("Enter the size of array");
+//        int size= sc.nextInt();
+//        int arr[]=new int[size];
+//        for(int i=0;i<size;i++){
+//            System.out.println("Enter the number of Array ...");
+//            arr[i]=sc.nextInt();
+//        }
+//        System.out.println("Enter the specific number...");
+//        int specificNumber= sc.nextInt();
+//
+//        int count=0;
+//        for (int n:arr){
+//            if (n==specificNumber){
+//                count++;
+//            }
+//        }
+//        System.out.println(count+ " times appear in array");
 
+
+//        69. Write a program that reads two arrays of integers with the same size and displays a new array with the elements
+//        resulting from the multiplication of the corresponding elements of the two arrays.
+//        System.out.println("Enter the size of arrays");
+//        int size= sc.nextInt();
+//        int array1[]=new int[size];
+//        for(int i=0;i<size;i++){
+//            System.out.println("Enter the number of 1st Array ...");
+//            array1[i]=sc.nextInt();
+//        }
+//
+//        int array2[]=new int[size];
+//        for(int i=0;i<size;i++){
+//            System.out.println("Enter the number of 2nd Array ...");
+//            array2[i]=sc.nextInt();
+//        }
+//        System.out.println("Elements of array that created by multiplication of the corresponding elements of the two arrays");
+//        int finalArray[]=new int[size];
+//        for(int i=0;i<size;i++){
+//            finalArray[i]=array1[i]*array2[i];
+//            System.out.println(finalArray[i]);
+//        }
+
+
+//        70. Create a program that reads an array of integers and checks that all elements are even.
+//        System.out.println("Enter the size of arrays");
+//        int size= sc.nextInt();
+//        int array[]=new int[size];
+//        for(int i=0;i<size;i++){
+//            System.out.println("Enter the number of  Array ...");
+//            array[i]=sc.nextInt();
+//        }
+//        boolean allEven=true;
+//        for (int a:array){
+//            if (a%2!=0){
+//                allEven=false;
+//                break;
+//            }
+//        }
+//        if (allEven){
+//            System.out.println("Elements of Array are even");
+//        }else System.out.println("Elements of Array are not even");
+
+
+//        #Strings
+
+//        71. Create a program that reads two words and concatenates them, displaying the resulting word.
+//        System.out.println("Enter 1st word...");
+//        String text1=sc.nextLine();
+//        System.out.println("Enter 2nd word...");
+//        String text2=sc.nextLine();
+//        String text3=text1+text2;
+//        System.out.println(text3);
+
+
+//        72. Write a program that takes a word and displays each letter separately.
+//        System.out.println("Enter word...");
+//        String word=sc.nextLine();
+//        int size=word.length();
+//        for (int i=0;i<size;i++){
+//            char letter=word.charAt(i);
+//            System.out.println(letter);
+//        }
+
+
+//        73. Create a program that takes a sentence and replaces all the letters "a" with "e"
+        System.out.println("Enter the sentence...");
+        String sentence=sc.nextLine();
+        char[] charArray=sentence.toCharArray();
+        for (int i=0;i<charArray.length;i++){
+            if (charArray[i]=='a'){
+                charArray[i]='e';
+            }
+        }
+        String modifySentence=new String(charArray);
+        System.out.println(modifySentence);
                 sc.close();
 
     }
