@@ -1,4 +1,6 @@
+import java.lang.reflect.Array;
 import java.time.LocalDate;
+import java.util.Arrays;
 import java.util.Scanner;
 
 class ArithmeticCalculator{
@@ -946,17 +948,75 @@ public class Main {
 
 
 //        73. Create a program that takes a sentence and replaces all the letters "a" with "e"
-        System.out.println("Enter the sentence...");
-        String sentence=sc.nextLine();
-        char[] charArray=sentence.toCharArray();
-        for (int i=0;i<charArray.length;i++){
-            if (charArray[i]=='a'){
-                charArray[i]='e';
-            }
-        }
-        String modifySentence=new String(charArray);
-        System.out.println(modifySentence);
-                sc.close();
+//        System.out.println("Enter the sentence...");
+//        String sentence=sc.nextLine();
+//        char[] charArray=sentence.toCharArray();
+//        for (int i=0;i<charArray.length;i++){
+//            if (charArray[i]=='a'){
+//                charArray[i]='e';
+//            }
+//        }
+//        String modifySentence=new String(charArray);
+//        System.out.println(modifySentence);
 
+
+//        74. Write a program that receives a name and checks that it starts with the letter "A".
+//        System.out.println("Enter the name ...");
+//        String name=sc.nextLine();
+//        boolean startWithA=name.toUpperCase().startsWith("A");
+//        if (startWithA){
+//            System.out.println("it starts with A");
+//        }else System.out.println("it does not start with A");
+
+
+//        75. Write a program that reads a word and checks if it is a palindrome (if it can be read backwards the same way).
+//        System.out.println("Enter the word ...");
+//        String word=sc.nextLine();
+//        int left=0;
+//        int right=word.length()-1;
+//        boolean isPalindrome=true;
+//        while (left<right){
+//            if (word.charAt(left)!=word.charAt(right)){
+//                isPalindrome=false;
+//                break;
+//            }
+//            left++;
+//            right--;
+//        }
+//        if (isPalindrome){
+//            System.out.println("Word is palindrome");
+//        }else System.out.println("It is not");
+
+//        76. Create a program that reads two words and checks if the second word is an anagram of the first.
+//        System.out.println("Enter the 1st word");
+//        String word1= sc.nextLine();
+//        System.out.println("Enter the 2nd word");
+//        String word2= sc.nextLine();
+//        word1=word1.replaceAll("\\s","").toLowerCase();
+//        word2=word2.replaceAll("\\s","").toLowerCase();
+//        char[] wordArray1=word1.toCharArray();
+//        char[] wordArray2=word2.toCharArray();
+//        Arrays.sort(wordArray1);
+//        Arrays.sort(wordArray2);
+//        boolean isAnagram=Arrays.equals(wordArray1,wordArray2);
+//        if (isAnagram){
+//            System.out.println("Words are anagram of each");
+//        }else System.out.println("They are not");
+//
+
+
+//        77. Write a program that takes a full name and displays only the first name
+//        System.out.println("Enter the full name...");
+//        String fullName=sc.nextLine();
+//        String nameParts[]=fullName.trim().split("\\s+");
+//        String firstName=nameParts[0];
+//        System.out.println(firstName);
+
+
+
+
+
+        sc.close();
     }
+
 }
