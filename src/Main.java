@@ -1014,6 +1014,40 @@ public class Main {
 
 
 
+//        78. Make a program that receives a sentence and displays the amount of blank spaces present in it.
+//        System.out.println("Enter the sentence");
+//        String sentence=sc.nextLine();
+//        char letter[]=sentence.toCharArray();
+//        int count=0;
+//        for (char l:letter){
+//            if (l==' ' || l=='\t'){
+//                count++;
+//            }
+//        }
+//        System.out.println("The number of blank spaces : "+count);
+
+
+//        79. Create a program that reads a word and displays the number of vowels present in it.
+//        System.out.println("Enter the sentence");
+//        String sentence=sc.nextLine();
+//        char letter[]=sentence.toLowerCase().toCharArray();
+//        int count=0;
+//        for (char l:letter){
+//            if (l=='a' || l=='o' || l=='i'||l=='u'||l=='e'){
+//                count++;
+//            }
+//        }
+//        System.out.println("The number of vowels  : "+count);
+
+
+//        80. Write a program that takes a full name and displays the last name (last name) first.
+//        System.out.println("Enter the name");
+//        String sentence=sc.nextLine();
+//
+//        String parts[]=sentence.trim().split("\\s+");
+//        System.out.println("Last Name : "+parts[1]);
+
+
 
 
         sc.close();
