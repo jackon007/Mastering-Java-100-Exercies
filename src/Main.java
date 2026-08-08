@@ -1,6 +1,7 @@
 import java.lang.reflect.Array;
 import java.time.LocalDate;
 import java.util.Arrays;
+import java.util.Random;
 import java.util.Scanner;
 
 class ArithmeticCalculator{
@@ -1048,6 +1049,81 @@ public class Main {
 //        System.out.println("Last Name : "+parts[1]);
 
 
+
+//        81. Write a program that fills a 3x3 matrix with values entered by the user and displays the sum of the main diagonal values.
+//        System.out.println("Enter the elements of matric 3x3...");
+//        int matrix[][]=new int[3][3];
+//        for (int i=0;i<3;i++){
+//            for (int j=0;j<3;j++){
+//                System.out.println("Enter the number of the place : "+"["+(i+1)+","+(j+1)+"]");
+//                int number= sc.nextInt();
+//                matrix[i][j]=number;
+//            }
+//        }
+//
+//        for(int i=0;i<3;i++){
+//            for (int j=0;j<3;j++){
+//                System.out.print(matrix[i][j]+" ");
+//            }
+//            System.out.println();
+//        }
+//
+//        int sum=0;
+//        for(int i=0;i<3;i++){
+//            sum+=matrix[i][i];
+//        }
+//        System.out.println("The sum of main diagonal values : "+ sum);
+
+//        82. Write a program that fills a 4x4 matrix with random values and displays the transposed matrix.
+//        int matrix[][]=new int[4][4];
+//        Random random=new Random();
+//        System.out.println("Real 4x4 Matrix :");
+//        for (int i=0;i<4;i++){
+//            for (int j=0;j<4;j++){
+//                matrix[i][j]=random.nextInt(100);
+//                System.out.print(matrix[i][j]+" ");
+//            }
+//            System.out.println();
+//        }
+//
+//        int transposedMatrix[][]=new int[4][4];
+//        System.out.println("Transposed of 4x4 Matrix :");
+//        for (int i=0;i<4;i++){
+//            for (int j=0;j<4;j++){
+//                transposedMatrix[i][j]=matrix[j][i];
+//                System.out.print(transposedMatrix[i][j]+" ");
+//            }
+//            System.out.println();
+//        }
+
+//        83. Write a program that reads two 2x2 matrices and displays the sum of the two matrices.
+
+        int firstMatrix[][]=new int[2][2];
+        int secondMatrix[][]=new int[2][2];
+        int sumMatrix[][]=new int[2][2];
+        System.out.println("Enter the elements of first matrix");
+            for (int i=0;i<2;i++){
+                for (int j=0;j<2;j++){
+                    System.out.println("Enter the number of the place : "+"["+(i+1)+","+(j+1)+"]");
+                    firstMatrix[i][j]= sc.nextInt();
+                }
+            }
+
+        System.out.println("Enter the elements of second matrix");
+        for (int i=0;i<2;i++){
+            for (int j=0;j<2;j++){
+                System.out.println("Enter the number of the place : "+"["+(i+1)+","+(j+1)+"]");
+                secondMatrix[i][j]= sc.nextInt();
+            }
+        }
+
+        for (int i=0;i<2;i++){
+            for (int j=0;j<2;j++){
+                sumMatrix[i][j]=firstMatrix[i][j]+secondMatrix[i][j];
+                System.out.print(sumMatrix[i][j]+" ");
+            }
+            System.out.println();
+        }
 
 
         sc.close();
