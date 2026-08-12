@@ -1098,32 +1098,136 @@ public class Main {
 
 //        83. Write a program that reads two 2x2 matrices and displays the sum of the two matrices.
 
-        int firstMatrix[][]=new int[2][2];
-        int secondMatrix[][]=new int[2][2];
-        int sumMatrix[][]=new int[2][2];
-        System.out.println("Enter the elements of first matrix");
-            for (int i=0;i<2;i++){
-                for (int j=0;j<2;j++){
-                    System.out.println("Enter the number of the place : "+"["+(i+1)+","+(j+1)+"]");
-                    firstMatrix[i][j]= sc.nextInt();
-                }
-            }
+//        int firstMatrix[][]=new int[2][2];
+//        int secondMatrix[][]=new int[2][2];
+//        int sumMatrix[][]=new int[2][2];
+//        System.out.println("Enter the elements of first matrix");
+//            for (int i=0;i<2;i++){
+//                for (int j=0;j<2;j++){
+//                    System.out.println("Enter the number of the place : "+"["+(i+1)+","+(j+1)+"]");
+//                    firstMatrix[i][j]= sc.nextInt();
+//                }
+//            }
+//
+//        System.out.println("Enter the elements of second matrix");
+//        for (int i=0;i<2;i++){
+//            for (int j=0;j<2;j++){
+//                System.out.println("Enter the number of the place : "+"["+(i+1)+","+(j+1)+"]");
+//                secondMatrix[i][j]= sc.nextInt();
+//            }
+//        }
+//
+//        for (int i=0;i<2;i++){
+//            for (int j=0;j<2;j++){
+//                sumMatrix[i][j]=firstMatrix[i][j]+secondMatrix[i][j];
+//                System.out.print(sumMatrix[i][j]+" ");
+//            }
+//            System.out.println();
+//        }
 
-        System.out.println("Enter the elements of second matrix");
-        for (int i=0;i<2;i++){
-            for (int j=0;j<2;j++){
-                System.out.println("Enter the number of the place : "+"["+(i+1)+","+(j+1)+"]");
-                secondMatrix[i][j]= sc.nextInt();
-            }
-        }
+//        84. Write a program that fills a 5x5 matrix with integers and displays the largest value in the matrix and its position.
+//                int matrix[][]=new int[5][5];
+//        System.out.println("Enter the elements of matrix ...");
+//
+//        for (int i=0;i<5;i++){
+//            for (int j=0;j<5;j++){
+//                System.out.println("Enter the matric of ["+(i+1)+","+(j+1)+"]");
+//                matrix[i][j]= sc.nextInt();
+//            }
+//        }
+//
+//        int largest=matrix[0][0];
+//        int row=0;
+//        int column=0;
+//        for (int i=0;i<5;i++){
+//            for (int j=0;j<5;j++){
+//               if (matrix[i][j]>=largest){
+//                   largest=matrix[i][j];
+//                   row=i;
+//                   column=j;
+//               }
+//            }
+//        }
+//        System.out.println("The largest values is : "+largest);
+//        System.out.println("Its position ["+row+","+column+"]");
 
-        for (int i=0;i<2;i++){
-            for (int j=0;j<2;j++){
-                sumMatrix[i][j]=firstMatrix[i][j]+secondMatrix[i][j];
-                System.out.print(sumMatrix[i][j]+" ");
-            }
-            System.out.println();
-        }
+//        85. Write a program that reads a 3x3 matrix and calculates the average of the values present in the even positions (sum
+//        of the even indices) of the matrix.
+//        int matrix[][]=new int[3][3];
+//        System.out.println("Enter the elements of matrix ...");
+//
+//        for (int i=0;i<3;i++){
+//            for (int j=0;j<3;j++){
+//                System.out.println("Enter the matric of ["+(i+1)+","+(j+1)+"]");
+//                matrix[i][j]= sc.nextInt();
+//            }
+//        }
+//
+//        int sum=0;
+//        int count=0;
+//        for (int i=0;i<3;i++){
+//            for (int j=0;j<3;j++){
+//               if ((j+j)%2==0){
+//                   sum+=matrix[i][j];
+//                   count++;
+//               }
+//            }
+//        }
+//        double avg=(double) sum/count;
+//        System.out.println("The sum of numbers " +avg);
+
+
+//        86. Write a program that fills a 4x4 matrix with random numbers and displays the sum of the values present in each row and in each column.
+//        int matrix[][]=new int[4][4];
+//        Random random=new Random();
+//        for (int i=0;i<4;i++){
+//            for (int j=0;j<4;j++){
+//                matrix[i][j]=random.nextInt(10);
+//            }
+//        }
+//
+//
+//        for (int i=0;i<4;i++){
+//           int sumOfRow=0;
+//            for (int j=0;j<4;j++){
+//                sumOfRow+=matrix[i][j];
+//            }
+//            System.out.println("The sum of ROW: "+(i+1)+" is "+sumOfRow);
+//        }
+//
+//        for (int j=0;j<4;j++){
+//            int sumOfColumn=0;
+//            for (int i=0;i<4;i++){
+//               sumOfColumn+=matrix[i][j];
+//            }
+//            System.out.println("The sum of ROW: "+(j+1)+" is "+sumOfColumn);
+//        }
+
+
+//        87. Write a program that reads a 3x3 matrix and calculates the determinant of the matrix.
+//        int matrix[][]=new int[3][3];
+//        System.out.println("Enter the elements of matrix ...");
+//
+//        for (int i=0;i<3;i++){
+//            for (int j=0;j<3;j++){
+//                System.out.println("Enter the matric of ["+(i+1)+","+(j+1)+"]");
+//                matrix[i][j]= sc.nextInt();
+//            }
+//        }
+//
+//        int a=matrix[0][0];
+//        int b=matrix[0][1];
+//        int c=matrix[0][2];
+//        int d=matrix[1][0];
+//        int e=matrix[1][1];
+//        int f=matrix[1][2];
+//        int g=matrix[2][0];
+//        int h=matrix[2][1];
+//        int i=matrix[2][2];
+//
+//        int determinant=a*(e*i-h*f)-b*(d*i-g*f)+c*(d*h-e*g);
+//        System.out.println("The determinant of matrix : "+determinant);
+
 
 
         sc.close();
